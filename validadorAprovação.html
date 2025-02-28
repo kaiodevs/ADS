@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- faz os acentos aparecerem -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let nomeDisciplina, mediaFinal, quantAulas, quantFaltas, resultado;
+
+        nomeDisciplina = prompt("Qual é o nome da Máteria");
+        mediaFinal = parseInt(prompt("Digite a média final: "));
+        quantAulas = parseInt(prompt("Qual foi o número de aulas no semestre?"));
+        quantFaltas = parseInt(prompt("Digite a quantidade de faltas: "));
+        
+        resultado = mediaFinal >= 6 && quantFaltas < quantAulas / 4 ? "Aprovado" : "Reprovado";
+
+        document.write("O aluno na materia de ", nomeDisciplina, " foi ", resultado, "<br>",
+            "Obtendo a média final de ", mediaFinal, "<br>",
+            "Teve ", quantAulas, " aula(s) no semestre <br>",
+            "Faltou ", quantFaltas, " aulas(s)"
+        );
+
+    </script>
+
+</body>
+
+</html>
