@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    
+    class Aluno {
+        // declarando os atributos com "_ " para evitar problemas com set. segue abaixo o exemplo:
+        _id;
+        _nome;
+        _telefone;
+        _nota1;
+        _nota2;
+        // objeto com constructor ja iniciado
+        constructor(i,n,t,n1,n2){
+            this._id=i;
+            this._nome=n;
+            this._telefone=t;
+            this._nota1=n1;
+            this._nota2=n2;
+        }
+//metodos set
+set id(i) {
+this._id =i;
+}    
+set nome (n) {
+    this._nome=n
+}
+set telefone(t) {
+    this._telefone=t;
+}
+set nota1(n1){
+    this._nota1=n1
+}
+set nota2 (n2){
+    this._nota2=n2
+}
+// metodos get
+get id() {
+    return this._id;
+}
+ get nome () {
+    return this._nome;
+ }
+get telefone(){
+    return this._telefone;
+}
+get nota1 (){
+    return this._nota1;
+}
+get nota2(){
+    return this._nota2;
+}
+
+calcularMedia(){
+    return(this._nota1 + this._nota2) /2;
+}
+
+}
+
+// solicitando dados do usuario
+
+let i,n,t,n1,n2; 
+i= prompt ("Digite o ID do aluno");
+n= prompt ("Digite o nome do aluno");
+t= prompt("Digite o telefone do aluno");
+n1 = parseFloat(prompt("Digite a primeira nota"));
+n2= parseFloat(prompt("Digite a segunda nota"));
+// criando a instancia do aluno
+let aluno = new Aluno(i,n,t,n1,n2);
+
+// exibindo os dados armazenados
+
+document.write ("Aluno cadastrado : <br>");
+document.write ("ID : ", aluno.id , "<br>");
+document.write ("Nome : ", aluno.nome, "<br>");
+document.write(`Telefone : ${aluno.telefone}`);
+document.write("<br>A nota do aluno é : ", aluno.calcularMedia());
+
+</script>
+
+</body>
+</html>
+
