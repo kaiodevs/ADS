@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario exercicio 4</title>
+</head>
+
+<body>
+    <form action="*">
+        <b>Identificação do Usuário</b>
+        <p>Nome:
+            <input type="text" name="username" size="15" maxlength="30">
+        </p>
+        <p>Senha:
+            <input type="password" name="password" size="15" maxlength="30">
+        </p>
+        <p>CPF:
+            <input type="text" name="CPF" size="15" max="11">
+        </p>
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" value="Masculino" checked="checked" /> Masculino
+        <input type="radio" name="sexo" value="Feminino" /> Feminino
+        <p>Data de nascimento:
+            <input type="date" name="data_nascimento">
+        </p>
+        <p>Estado Civil:</p>
+        <select name="estado_civil">
+            <option value="solteiro(a)">solteiro(a)</option>
+            <option value="casado(a)">casado(a)</option>
+            <option value="separado_judicialmente">separad(a) judicialmente</option>
+            <option value="divorciado(a)">divorciado(a)</option>
+            <option value="viúvo">viúvo(a)</option>
+        </select>
+        <p>Escolaridade:</p>
+        <select name="escolaridade">
+            <option value="educacao_basica">educação básica</option>
+            <option value="ensino fundamental">ensino fundamental</option>
+            <option value="ensino médio">ensino médio</option>
+            <option value="ensino_superior">ensino superior</option>
+            <option value="pos_graduacao">pós-graduação</option>
+            <option value="mestrado">mestrado</option>
+            <option value="doutorado">doutorado</option>
+        </select>
+        <p>Ocupação Pricipal:
+            <input type="text" name="ocupacao_principal" size="30" maxlength="30">
+        </p>
+        <p>Renda Mensal:
+            <input type="text" name="renda_mensal" size="30" maxlength="30">
+        </p>
+        <p>Número de dependentes:
+            <input type="text" name="num_dependentes" size="30" maxlength="2">
+        </p>
+        <p>Telefone:
+            <input type="text" name="telefone" size="30" maxlength="30">
+        </p>
+        <p>Email:
+            <input type="email" name="email" size="30" maxlength="30">
+        </p>
+
+        <h3>Localização</h3>
+        <p>Estado:
+            <select name="estados_br" id="">
+                <option value="">Acre(AC)</option>
+                <option value="">Alagoas(AL)</option>
+                <option value="">Amapá(AP)</option>
+                <option value="">Amazonas(AM)</option>
+                <option value="">Bahia(BA)</option>
+                <option value="">Ceará(CE)</option>
+                <option value="">Espírito Santo(ES)</option>
+                <option value="">Goías(GO)</option>
+                <option value="">Maranhão(MA)</option>
+                <option value="">Mato Grosso(MT)</option>
+                <option value="">Mato Grosso do Sul(MS)</option>
+                <option value="">Minas Gerais(MG)</option>
+                <option value="">Pará(PA)</option>
+                <option value="">Paraíba(PB)</option>
+                <option value="">Paraná(PR)</option>
+                <option value="">Pernambuco(PE)</option>
+                <option value="">Piauí(PI)</option>
+                <option value="">Rio de Janeiro(RJ)</option>
+                <option value="">Rio Grande do Norte(RN)</option>
+                <option value="">Rio Grande do Sul(RS)</option>
+                <option value="">Rondônia(RO)</option>
+                <option value="">Roraima(RR)</option>
+                <option value="">Santa Catarina(SC)</option>
+                <option value="">São Paulo(SP)</option>
+                <option value="">Sergipe(SE)</option>
+                <option value="">Tocantins(TO)</option>
+                <option value="">Distrito Federal(DF)</option>
+            </select>
+        </p>
+        <p>Cidade:
+            <input type="text" name="Cidade" size="30" maxlength="30">
+        </p>
+
+        <h3>Mensagem do Usuário</h3>
+        <p>Grau de Urgência:</p>
+        <p>Mensagem: </p>
+        <textarea name="mensagem_usuario" id=""></textarea>
+        <p>Reportar Erro:</p>
+        <input type="file">
+        <br>
+        <br>
+        <p><input type="submit" name="Enviar" value="Enviar"> <input type="reset" name="Limpar" value="Limpar"> </p><br>
+
+        <p>*Preenchimento Obrigatório</p>
+    </form>
+</body>
+
+</html>
